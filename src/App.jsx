@@ -35,37 +35,45 @@ function App() {
 
   return (
     <>
-      <div className='text-white bg-orange-500 w-full mx-4 my-10 text-center p-3 rounded-2xl sm:w-1/3 sm:mx-auto'>
-        <p className='text-2xl'>I'm ATLAS AI</p>
-        <p className='text-2xl'>Created by <span className='text-black text-3xl'>Akshay chaudhary</span></p>
+
+      <div className='text-white bg-blue-700 h-auto p-5'>
+        <p className='text-3xl'>Hello i'm Atlas AI</p>
+        <p className='text-3xl'>Created by <span className='font-bold text-4xl'>Akshay chaudhary</span></p>
+
+        <div className='text-2xl mt-14'>
+          I'm here to help you and i'll try to answer all of your questions.
+        </div>
       </div>
 
-      <div className='w-full mx-4 h-20 p-3 text-center sm:w-1/4 sm:mx-auto'>
-        <input
-          className='w-full h-full rounded-xl bg-gray-500 text-white text-xl p-3'
-          type="text"
-          placeholder='Ask me anything'
-          value={question}
-          onChange={(e) => { setQuestion(e.target.value) }}
+      <div className='text-center'>
+      <input
+        className='w-11/12 h-auto mx-4 my-5 rounded-xl bg-gray-500 text-white text-xl ps-5 py-3 md:w-2/3 md:mx-auto'
+        type="text"
+        placeholder='Ask me anything'
+        value={question}
+        onChange={(e) => { setQuestion(e.target.value) }}
 
-        />
-
-
-      </div>
-
-      <div className='bg-gray-500 w-40 h-10 m-4 rounded sm:m-auto hover:bg-gray-600'>
-      <button
-        onClick={generateAnswer}
-        className='w-full h-full text-center rounded-xl text-xl mx-auto text-white'>
-        Submit
-      </button>
+      />
       </div>
 
 
 
-      <p className='text-white my-10 mx-4 text-xl'>
-        {answer}
-      </p>
+      <div className='bg-gray-500 w-28 h-10 mx-4 rounded-xl sm:m-auto hover:bg-gray-600'>
+        <button
+          onClick={generateAnswer}
+          className='w-full h-full text-center text-xl text-white'>
+          Submit
+        </button>
+      </div>
+
+
+
+      <div className='text-white text-xl h-96 m-4 px-3 py-5 border border-gray-500 rounded overflow-auto md:w-2/3 md:mx-auto'>
+        <p className='w-full h-full'>
+          {answer}
+        </p>
+
+      </div>
     </>
   )
 }
