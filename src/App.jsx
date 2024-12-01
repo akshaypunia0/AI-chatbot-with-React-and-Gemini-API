@@ -68,7 +68,7 @@ function App() {
 
 
 
-      <div className='text-white text-xl h-72 m-4 px-3 py-5 border border-gray-500 rounded overflow-auto md:w-2/3 md:mx-auto md:h-96'>
+      <div className='text-white text-xl h-80 m-4 px-3 py-5 border border-gray-500 rounded overflow-auto md:w-2/3 md:mx-auto md:h-96'>
         <p className='w-full h-full'>
           {answer}
         </p>
