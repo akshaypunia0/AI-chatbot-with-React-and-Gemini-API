@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import axios from 'axios'
 
-const api = import.meta.env.VITE_GEMINI_API_URL
+// const api = import.meta.env.VITE_GEMINI_API_URL
 
 function App() {
   const [question, setQuestion] = useState('')
@@ -14,7 +14,7 @@ function App() {
 
     const response = await axios({
       method: 'post',
-      url: api,
+      url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAorAiCydTAHMFpZlQOiEI8C3hj0iS_DBs',
       data: {
         contents: [
           {
