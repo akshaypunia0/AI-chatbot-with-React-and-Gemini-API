@@ -36,11 +36,11 @@ function App() {
   return (
     <>
 
-      <div className='text-white bg-blue-700 h-auto p-5'>
+      <div className='text-white bg-blue-700 h-auto p-3'>
         <p className='text-2xl'>Hello i'm Atlas AI</p>
         <p className='text-2xl'>Created by <span className='font-bold text-3xl'>Akshay chaudhary</span></p>
 
-        <div className='text-xl mt-8'>
+        <div className='text-xl mt-4'>
           I'm here to help you and i'll try to answer all of your questions.
         </div>
       </div>
@@ -68,7 +68,7 @@ function App() {
 
 
 
-      <div className='text-white text-xl h-96 m-4 px-3 py-5 border border-gray-500 rounded overflow-auto md:w-2/3 md:mx-auto'>
+      <div className='text-white text-xl h-60 m-4 px-3 py-5 border border-gray-500 rounded overflow-auto md:w-2/3 md:mx-auto md:h-96'>
         <p className='w-full h-full'>
           {answer}
         </p>
