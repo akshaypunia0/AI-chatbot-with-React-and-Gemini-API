@@ -37,10 +37,10 @@ function App() {
     <>
 
       <div className='text-white bg-blue-700 h-auto p-5'>
-        <p className='text-3xl'>Hello i'm Atlas AI</p>
-        <p className='text-3xl'>Created by <span className='font-bold text-4xl'>Akshay chaudhary</span></p>
+        <p className='text-2xl'>Hello i'm Atlas AI</p>
+        <p className='text-2xl'>Created by <span className='font-bold text-3xl'>Akshay chaudhary</span></p>
 
-        <div className='text-2xl mt-14'>
+        <div className='text-xl mt-8'>
           I'm here to help you and i'll try to answer all of your questions.
         </div>
       </div>
